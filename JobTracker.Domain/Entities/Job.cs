@@ -1,8 +1,9 @@
-﻿using JobTracker.Domain.Enums;
+﻿using JobTracker.Domain.Common;
+using JobTracker.Domain.Enums;
 
 namespace JobTracker.Domain.Entities
 {
-    public class Job
+    public class Job : BaseEntity
     {
         public string Title { get; set; } = string.Empty;
         public string? Description { get; set; }
